@@ -1,0 +1,15 @@
+# Página de erro
+ErrorDocument 404 /404.html
+
+# Não expor arquivos do repositório (caso o deploy seja via Git da Hostinger)
+RedirectMatch 404 /\.git
+RedirectMatch 404 /README\.md$
+
+# Forçar HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# www -> sem www
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
