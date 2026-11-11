@@ -7,8 +7,8 @@
     // https://pedrocamaforte.com/?lang=pt  ->  /pt/
     if (new URLSearchParams(location.search).get('lang') === 'pt') location.replace('/pt/');
   </script>
-  <title>Pedro Camaforte — Software developer &amp; content creator</title>
-  <meta name="description" content="Pedro Camaforte — software developer and content creator. Projects, YouTube channel, experience and achievements.">
+  <title>Pedro Camaforte — Software engineer &amp; content creator</title>
+  <meta name="description" content="Pedro Camaforte — product-minded software engineer with 6+ years of experience and creator of a YouTube channel about system design and international careers.">
   <meta name="theme-color" content="#0a0a0b">
   <link rel="canonical" href="https://pedrocamaforte.com/">
   <link rel="alternate" hreflang="en" href="https://pedrocamaforte.com/">
@@ -17,10 +17,27 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pedrocamaforte.com/">
   <meta property="og:title" content="Pedro Camaforte">
-  <meta property="og:description" content="Software developer and content creator.">
-  <!-- TODO: og:image (1200x630) -> assets/og.png -->
+  <meta property="og:description" content="Software engineer and content creator. System design, scalability and international careers.">
+  <meta property="og:image" content="https://pedrocamaforte.com/assets/pedro.jpg">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Pedro Camaforte",
+    "url": "https://pedrocamaforte.com/",
+    "image": "https://pedrocamaforte.com/assets/pedro.jpg",
+    "jobTitle": "Software Engineer",
+    "sameAs": [
+      "https://github.com/pedro-camaforte",
+      "https://www.youtube.com/@pedrocamaforte",
+      "https://www.linkedin.com/in/pedro-camaforte/",
+      "https://x.com/pedro_camaforte",
+      "https://www.instagram.com/pedrocamaforte/"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -44,37 +61,47 @@
 
   <!-- ================= HERO ================= -->
   <section class="hero">
-    <!-- TODO: trocar pelo <img class="avatar" src="assets/pedro.jpg" alt="Pedro Camaforte" width="72" height="72"> -->
-    <div class="avatar ph-box" aria-hidden="true">photo</div>
+    <img class="avatar" src="assets/pedro.jpg" alt="Pedro Camaforte" width="72" height="72">
 
     <h1>Pedro Camaforte</h1>
-    <p class="role">Software developer &amp; content creator.</p>
+    <p class="role">Software engineer &amp; content creator.</p>
 
     <div class="bio">
-      <p><span class="ph">2–3 sentence intro: what you do, what you build, what you care about</span></p>
+      <p>I'm a product-minded software engineer with 6+ years of experience taking products from zero to production. I also run a YouTube channel where I teach system design and how to build an international career from Brazil.</p>
     </div>
 
     <p class="meta">
-      <span><span class="dot"></span><span class="ph">current status — e.g. building X / working at Y</span></span>
-      <span><span class="ph">City</span>, Brazil</span>
+      <span><span class="dot"></span>Fullstack Software Engineer at eGiftify</span>
+      <span>Brazil · working remotely</span>
     </p>
 
     <p class="links">
       <a href="https://github.com/pedro-camaforte" rel="me noopener" target="_blank">GitHub</a>
-      <a href="#" rel="me noopener" target="_blank">YouTube <span class="ph">link</span></a>
-      <a href="#" rel="me noopener" target="_blank">LinkedIn <span class="ph">link</span></a>
-      <a href="#" rel="me noopener" target="_blank">X <span class="ph">link</span></a>
-      <a href="#" rel="me noopener" target="_blank">Instagram <span class="ph">link</span></a>
+      <a href="https://www.youtube.com/@pedrocamaforte" rel="me noopener" target="_blank">YouTube</a>
+      <a href="https://www.linkedin.com/in/pedro-camaforte/" rel="me noopener" target="_blank">LinkedIn</a>
+      <a href="https://x.com/pedro_camaforte" rel="me noopener" target="_blank">X</a>
+      <a href="https://www.instagram.com/pedrocamaforte/" rel="me noopener" target="_blank">Instagram</a>
     </p>
   </section>
 
   <!-- ================= ABOUT ================= -->
   <section class="section" id="about">
     <h2><span class="n">01</span>About</h2>
-    <div class="lead">
-      <p><span class="ph">Paragraph 1 — your story: how you got into programming, where you are today</span></p>
-      <p><span class="ph">Paragraph 2 — what you work with: stack, areas of interest, what you teach</span></p>
-      <p><span class="ph">Paragraph 3 — outside of work: something personal, optional</span></p>
+    <div>
+      <div class="lead">
+        <p>I treat code as a means, not the goal: what matters is what reaches the customer. I own work end to end, from architecture decisions to rollout, including the silent bugs nobody else was looking for.</p>
+        <p>Over the last six years I've been a frontend architect in the credit recovery sector, built AI-powered recruiting tools at Recruit Robin, and today I work on checkout, loyalty and corporate wallet products at eGiftify.</p>
+        <p>I use AI heavily in my daily workflow to ship faster without lowering the bar.</p>
+      </div>
+
+      <dl class="stack">
+        <dt>Code</dt>
+        <dd>Java · TypeScript · Node · JavaScript · React · Vue.js · Nuxt · Python · Django · C#</dd>
+        <dt>Data &amp; infra</dt>
+        <dd>PostgreSQL · MongoDB · AWS · Azure · Datadog · CI/CD · System Design</dd>
+        <dt>AI</dt>
+        <dd>Claude Code · Codex · AI workflows</dd>
+      </dl>
     </div>
   </section>
 
@@ -82,31 +109,36 @@
   <section class="section" id="youtube">
     <h2><span class="n">02</span>YouTube</h2>
     <div>
-      <p class="lead"><span class="ph">One or two sentences about the channel: what it covers and who it's for</span></p>
+      <p class="lead">I make videos in Portuguese about system design, advanced architectures, scalability, AI and international careers. The goal is simple: make you a better programmer.</p>
 
       <div class="stats">
-        <div class="stat"><b><span class="ph">000K</span></b><span>subscribers</span></div>
-        <div class="stat"><b><span class="ph">0.0M</span></b><span>total views</span></div>
-        <div class="stat"><b><span class="ph">000</span></b><span>videos published</span></div>
+        <div class="stat"><b>6.7K</b><span>subscribers</span></div>
+        <div class="stat"><b>152K</b><span>total views</span></div>
+        <div class="stat"><b>23</b><span>videos published</span></div>
       </div>
+      <p class="note">Numbers as of November 2026.</p>
 
       <h3 class="sub">Selected videos</h3>
       <ul class="rows">
-        <li><a class="row" href="#" target="_blank" rel="noopener">
-          <span class="title"><span class="ph">Video title 1</span><span class="arrow">↗</span></span>
-          <span class="side"><span class="ph">000K views</span></span>
+        <li><a class="row" href="https://www.youtube.com/watch?v=buCUs7Jx2to" target="_blank" rel="noopener" lang="pt-BR">
+          <span class="title">Escalando leituras: o que Big Techs esperam que você saiba&nbsp;<span class="arrow">↗</span></span>
+          <span class="side">41K views</span>
         </a></li>
-        <li><a class="row" href="#" target="_blank" rel="noopener">
-          <span class="title"><span class="ph">Video title 2</span><span class="arrow">↗</span></span>
-          <span class="side"><span class="ph">000K views</span></span>
+        <li><a class="row" href="https://www.youtube.com/watch?v=hUps0HGA12Q" target="_blank" rel="noopener" lang="pt-BR">
+          <span class="title">Upload e Download de Arquivos Grandes — Presigned URLs, S3 e CDN&nbsp;<span class="arrow">↗</span></span>
+          <span class="side">16K views</span>
         </a></li>
-        <li><a class="row" href="#" target="_blank" rel="noopener">
-          <span class="title"><span class="ph">Video title 3</span><span class="arrow">↗</span></span>
-          <span class="side"><span class="ph">000K views</span></span>
+        <li><a class="row" href="https://www.youtube.com/watch?v=KSCKg_ygFI4" target="_blank" rel="noopener" lang="pt-BR">
+          <span class="title">Websocket, SSE e Polling: atualizações em tempo real&nbsp;<span class="arrow">↗</span></span>
+          <span class="side">16K views</span>
+        </a></li>
+        <li><a class="row" href="https://www.youtube.com/watch?v=Y3wrwPSWxHI" target="_blank" rel="noopener" lang="pt-BR">
+          <span class="title">Como eu projetaria a Resend: 500 milhões de emails por dia&nbsp;<span class="arrow">↗</span></span>
+          <span class="side">3-part series</span>
         </a></li>
       </ul>
 
-      <a class="more" href="#" target="_blank" rel="noopener">Visit the channel ↗</a>
+      <a class="more" href="https://www.youtube.com/@pedrocamaforte" target="_blank" rel="noopener">Visit the channel ↗</a>
     </div>
   </section>
 
@@ -115,29 +147,35 @@
     <h2><span class="n">03</span>Projects</h2>
     <div>
       <ul class="rows">
-        <li><a class="row" href="#" target="_blank" rel="noopener">
-          <span class="title"><span class="ph">Project name 1</span><span class="arrow">↗</span></span>
-          <span class="side"><span class="ph">year</span></span>
-          <span class="desc"><span class="ph">One-line description: what it is and what problem it solves</span></span>
-          <span class="tags"><span class="ph">stack · stack · stack</span></span>
+        <li class="row">
+          <span class="title">Multi-tenant automation platform</span>
+          <span class="side">ZSync Tech · 2024 — 2025</span>
+          <span class="desc">Automation management system for one of the largest credit recovery companies in Bauru, São Paulo, which manages over USD 72M in annual transactions. Designed and built solo, with role-based permissions, scheduled executions and full observability.</span>
+          <span class="tags">Node · Vue · PostgreSQL · Docker · Grafana · Loki · Tempo · Prometheus</span>
+        </li>
+        <li class="row">
+          <span class="title">Debt payment scheduling app</span>
+          <span class="side">HCosta · 2022</span>
+          <span class="desc">Web app that lets debtors schedule payments from their phones after a negotiation. Increased the company's payment rate by 72% and received the 2022 Best Performance award.</span>
+          <span class="tags">Python · MongoDB</span>
+        </li>
+        <li class="row">
+          <span class="title">AI candidate sourcing service</span>
+          <span class="side">Recruit Robin · 2025</span>
+          <span class="desc">Service connecting the WhatsApp Business API with OpenAI to continuously source and pre-screen candidates for recruiters.</span>
+          <span class="tags">Python · FastAPI · OpenAI · WhatsApp Business API</span>
+        </li>
+        <li><a class="row" href="https://github.com/pedro-camaforte/euv" target="_blank" rel="noopener">
+          <span class="title">euv&nbsp;<span class="arrow">↗</span></span>
+          <span class="side">open source</span>
+          <span class="desc">A minimal re-creation of Vue.js.</span>
+          <span class="tags">JavaScript</span>
         </a></li>
-        <li><a class="row" href="#" target="_blank" rel="noopener">
-          <span class="title"><span class="ph">Project name 2</span><span class="arrow">↗</span></span>
-          <span class="side"><span class="ph">year</span></span>
-          <span class="desc"><span class="ph">One-line description</span></span>
-          <span class="tags"><span class="ph">stack · stack · stack</span></span>
-        </a></li>
-        <li><a class="row" href="#" target="_blank" rel="noopener">
-          <span class="title"><span class="ph">Project name 3</span><span class="arrow">↗</span></span>
-          <span class="side"><span class="ph">year</span></span>
-          <span class="desc"><span class="ph">One-line description</span></span>
-          <span class="tags"><span class="ph">stack · stack · stack</span></span>
-        </a></li>
-        <li><a class="row" href="#" target="_blank" rel="noopener">
-          <span class="title"><span class="ph">Project name 4</span><span class="arrow">↗</span></span>
-          <span class="side"><span class="ph">year</span></span>
-          <span class="desc"><span class="ph">One-line description</span></span>
-          <span class="tags"><span class="ph">stack · stack · stack</span></span>
+        <li><a class="row" href="https://github.com/pedro-camaforte/vue-microfrontend" target="_blank" rel="noopener">
+          <span class="title">vue-microfrontend&nbsp;<span class="arrow">↗</span></span>
+          <span class="side">open source</span>
+          <span class="desc">A basic example of microfrontends with Vue.js 3.</span>
+          <span class="tags">Vue 3</span>
         </a></li>
       </ul>
 
@@ -150,19 +188,24 @@
     <h2><span class="n">04</span>Experience</h2>
     <ul class="rows">
       <li class="row">
-        <span class="title"><span class="ph">Role</span> · <span class="ph">Company</span></span>
-        <span class="side"><span class="ph">2024</span> — Present</span>
-        <span class="desc"><span class="ph">What you do / did there, in one or two lines</span></span>
+        <span class="title">Fullstack Software Engineer · eGiftify</span>
+        <span class="side">Aug 2025 — Present</span>
+        <span class="desc">Built checkout payment observability across 9 gateways, which surfaced a concurrency bug hitting 3.7% of Stripe checkouts; diagnosed it and took it to zero. Cut authentication database queries by ~77%, built the Corporate Wallet end to end and led the migration of 7 Loyalty screens from Vue 2 to Vue 3.</span>
       </li>
       <li class="row">
-        <span class="title"><span class="ph">Role</span> · <span class="ph">Company</span></span>
-        <span class="side"><span class="ph">2022 — 2024</span></span>
-        <span class="desc"><span class="ph">What you did there</span></span>
+        <span class="title">Fullstack Software Engineer · Recruit Robin</span>
+        <span class="side">Jan 2025 — Aug 2025</span>
+        <span class="desc">Built a new AI service for sourcing and pre-screening candidates, shipped features that increased recruiter–candidate communication by more than 300%, and integrated job providers such as Indeed.</span>
       </li>
       <li class="row">
-        <span class="title"><span class="ph">Role</span> · <span class="ph">Company</span></span>
-        <span class="side"><span class="ph">2020 — 2022</span></span>
-        <span class="desc"><span class="ph">What you did there</span></span>
+        <span class="title">System Architect &amp; Software Engineer · ZSync Tech</span>
+        <span class="side">Jan 2024 — Nov 2025 · freelance</span>
+        <span class="desc">Designed and built a multi-tenant automation platform solo, for a startup serving one of the largest credit recovery companies in Bauru, São Paulo.</span>
+      </li>
+      <li class="row">
+        <span class="title">Software Engineer · HCosta</span>
+        <span class="side">Nov 2020 — Jan 2025</span>
+        <span class="desc">Frontend architect for four microservice-based products in the credit recovery sector, processing USD 24M in annual revenue. Led design, architecture and development with Vue.js, Nuxt, Azure and OAuth 2.0.</span>
       </li>
     </ul>
   </section>
@@ -172,20 +215,20 @@
     <h2><span class="n">05</span>Achievements</h2>
     <ul class="rows">
       <li class="row">
-        <span class="title"><span class="ph">Achievement 1 — award, milestone, talk, certification…</span></span>
-        <span class="side"><span class="ph">year</span></span>
+        <span class="title">6.7K subscribers and 150K+ views teaching system design on YouTube</span>
+        <span class="side">2026</span>
       </li>
       <li class="row">
-        <span class="title"><span class="ph">Achievement 2</span></span>
-        <span class="side"><span class="ph">year</span></span>
+        <span class="title">Took a failure affecting 3.7% of Stripe checkouts to zero</span>
+        <span class="side">eGiftify</span>
       </li>
       <li class="row">
-        <span class="title"><span class="ph">Achievement 3</span></span>
-        <span class="side"><span class="ph">year</span></span>
+        <span class="title">Best Performance award — project ranked third in São Paulo</span>
+        <span class="side">2022</span>
       </li>
       <li class="row">
-        <span class="title"><span class="ph">Achievement 4</span></span>
-        <span class="side"><span class="ph">year</span></span>
+        <span class="title">Bachelor of Computer Science · Universidade Paulista</span>
+        <span class="side">2020 — 2021</span>
       </li>
     </ul>
   </section>
@@ -194,14 +237,13 @@
   <section class="section" id="contact">
     <h2><span class="n">06</span>Contact</h2>
     <div>
-      <p class="lead">Want to talk about a project, a partnership or the channel? Send me an email.</p>
-      <a class="email" href="mailto:"><span class="ph">your public email</span></a>
+      <p class="lead">Want to talk about a project, a partnership or the channel? The fastest way to reach me is LinkedIn.</p>
+      <a class="email" href="https://www.linkedin.com/in/pedro-camaforte/" target="_blank" rel="me noopener">linkedin.com/in/pedro-camaforte</a>
       <p class="links">
         <a href="https://github.com/pedro-camaforte" rel="me noopener" target="_blank">GitHub</a>
-        <a href="#" rel="me noopener" target="_blank">YouTube</a>
-        <a href="#" rel="me noopener" target="_blank">LinkedIn</a>
-        <a href="#" rel="me noopener" target="_blank">X</a>
-        <a href="#" rel="me noopener" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com/@pedrocamaforte" rel="me noopener" target="_blank">YouTube</a>
+        <a href="https://x.com/pedro_camaforte" rel="me noopener" target="_blank">X</a>
+        <a href="https://www.instagram.com/pedrocamaforte/" rel="me noopener" target="_blank">Instagram</a>
       </p>
     </div>
   </section>
